@@ -9,3 +9,4 @@
 9) copy 'hostgroup' and 'ansible.cfg' file in it. 
 10) list all the hosts with 'ansible --lists-hosts all' 
 11) ping all the hosts with 'ansible -u root -m ping all'. Check for the success with every server.
+12) edit /etc/hosts file and add Static IPs of db01, lb01, app01, app02 in it
