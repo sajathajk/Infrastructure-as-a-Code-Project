@@ -1,0 +1,11 @@
+1) Create an empty directory and copy 'Vagrantfile' in it.
+2) Spin up vagrant control, server, database, loadbalancer machines using 'vagrant up' command
+3) Check if the machines are runnning using 'vagrant status' command
+4) ssh into control machine using 'vagrant ssh control' command.
+5) Install ansible on control machine using 'apt-get' package. Prefer to install latest package.
+6) copy the private key from control machine (path = .ssh/id_rsa.pub) 
+7) paste the key into each server machine (path = /root/.ssh/authorized_keys) 
+8) ssh into control machine again
+9) copy 'hostgroup' and 'ansible.cfg' file in it. 
+10) list all the hosts with 'ansible --lists-hosts all' 
+11) ping all the hosts with 'ansible -u root -m ping all'. Check for the success with every server.
